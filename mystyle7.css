@@ -1,0 +1,63 @@
+body{
+    background-color: #ffe1a5;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.myrocket{
+animation-name: shake;
+animation-duration: 0.2s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: linear;
+}
+@keyframes shake{
+from{
+transform: translate(0px, -5px);
+}
+to{
+transform: translate(0px, 5px);
+}
+}
+div{
+    height: 400px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+
+}
+.mycloud{
+transform: translate(0px, -250px);
+animation-name: move;
+animation-duration: 0.5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+@keyframes move{
+    from{
+        transform: translate(0px, -250px); 
+    }
+    to{
+        transform: translate(0px, 250px);
+    }
+}
+.mycloud1{
+transform: translate(0px, -250px);
+animation-delay: 0.25s;
+animation-name: move1;
+animation-duration: 0.5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+@keyframes move1{
+    from{
+        transform: translate(0px, -250px);
+    }
+    to{
+        transform: translate(0px, 250px);
+    }
+}
